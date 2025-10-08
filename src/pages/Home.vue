@@ -1,0 +1,38 @@
+<template>
+  <div class="flex flex-col items-center justify-center space-y-4">
+    <p class="dark:text-white text-6xl">
+      <RouterLink to="/" class="no-underline hover:underline decoration-2">Martin</RouterLink> 
+      Tokes<span class="blinking-cursor">_</span>
+    </p>
+    <p class="text-white">Frontend developer / Designer / Student</p>
+    <a
+      href="https://github.com/Maratanaka"
+      target="_blank"
+      class="text-white underline decoration-1"
+    >
+      Github
+    </a>
+  </div>
+</template>
+
+
+<script>
+export default { name: "Home" };
+</script>
+
+<style scoped>
+    .blinking-cursor {
+        display: inline-block;
+        margin-left: 2px;
+        width: 10px;
+        animation: blink 2s steps(1) infinite;
+    }
+    @keyframes blink {
+        0%, 50%, 100% {
+            opacity: 1;
+        }
+        25%, 75% {
+            opacity: 0;
+        }
+    }
+</style>
