@@ -28,10 +28,10 @@
 
     <!-- Alsó jobb sarok -->
     <div class="fixed bottom-0 right-0 m-6 text-right space-y-1">
-      <RouterLink to="/what-i-see" class="text-gray-400 no-underline hover:underline decoration-1 text-sm block">WHAT I SEE</RouterLink>
-      <RouterLink to="/what-i-read" class="text-gray-400 no-underline hover:underline decoration-1 text-sm block">WHAT I READ</RouterLink>
-      <RouterLink to="/what-i-hear" class="text-gray-400 no-underline hover:underline decoration-1 text-sm block">WHAT I HEAR</RouterLink>
-      <RouterLink to="/what-i-watch" class="text-gray-400 no-underline hover:underline decoration-1 text-sm block">WHAT I WATCH</RouterLink>
+      <RouterLink to="/what-i-see" class="text-gray-400 no-underline hover:underline decoration-1 text-sm block">WHAT I SEE.</RouterLink>
+      <RouterLink to="/what-i-read" class="text-gray-400 no-underline hover:underline decoration-1 text-sm block">WHAT I READ.</RouterLink>
+      <RouterLink to="/what-i-hear" class="text-gray-400 no-underline hover:underline decoration-1 text-sm block">WHAT I HEAR.</RouterLink>
+      <RouterLink to="/what-i-watch" class="text-gray-400 no-underline hover:underline decoration-1 text-sm block">WHAT I WATCH.</RouterLink>
     </div>
   </div>
 </template>

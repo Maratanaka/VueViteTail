@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen flex flex-col items-center text-center space-y-6 text-white py-24 px-4">
     <p class="text-6xl tracking-widest">
-      <RouterLink to="/" class="no-underline hover:underline decoration-2">Martin</RouterLink>'s reading list
+      <RouterLink to="/" class="no-underline hover:underline decoration-2">Martin</RouterLink>'s reading list.
       <span class="blinking-cursor">_</span>
     </p>
 
