@@ -1,12 +1,12 @@
 <template>
   <div>
     <!-- Felső bal sarok -->
-    <div class="fixed top-0 left-0 m-6">
+    <div class="absolute top-0 left-0 m-6">
       <p class="text-white text-sm">2025</p>
     </div>
 
     <!-- Felső jobb sarok -->
-    <div class="fixed top-0 right-0 m-6 space-x-4">
+    <div class="absolute top-0 right-0 m-6 space-x-4">
       <a href="#" class="text-white no-underline hover:underline decoration-1 text-sm">About me</a>
       <br />
       <a href="#" class="text-white no-underline hover:underline decoration-1 text-sm">Contact</a>
