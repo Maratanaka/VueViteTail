@@ -4,11 +4,11 @@
       <RouterLink to="/" class="no-underline hover:underline decoration-2">Martin</RouterLink> 
       Tokes<span class="blinking-cursor">_</span>
     </p>
-    <p class="text-white">Frontend developer / Designer / Student</p>
+    <p class="dark:text-white">Frontend developer / Designer / Student</p>
     <a
       href="https://github.com/Maratanaka"
       target="_blank"
-      class="text-white underline decoration-1"
+      class="dark:text-white underline decoration-1"
     >
       Github
     </a>

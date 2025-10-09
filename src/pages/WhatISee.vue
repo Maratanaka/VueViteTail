@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center text-center space-y-6 text-white min-h-screen justify-center py-20">
+  <div class="flex flex-col items-center text-center space-y-6 dark:text-white min-h-screen justify-center py-20">
     <p class="dark:text-white text-6xl tracking-widest">
       <RouterLink to="/" class="no-underline hover:underline decoration-2">Martin</RouterLink>'s recent
       <br> pictures.<span class="blinking-cursor">_</span>

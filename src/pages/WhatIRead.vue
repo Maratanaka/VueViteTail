@@ -1,14 +1,13 @@
 <template>
-  <div class="min-h-screen flex flex-col items-center text-center space-y-6 text-white py-24 px-4">
+  <div class="min-h-screen flex flex-col items-center text-center space-y-6 dark:text-white py-24 px-4">
     <p class="text-6xl tracking-widest">
-      <RouterLink to="/" class="no-underline hover:underline decoration-2">Martin</RouterLink>'s reading list.
-      <span class="blinking-cursor">_</span>
+      <RouterLink to="/" class="no-underline hover:underline decoration-2">Martin</RouterLink>'s reading list.<span class="blinking-cursor">_</span>
     </p>
 
     <div
   v-for="(book, index) in books"
   :key="index"
-  class="outline-1 outline-gray-600 p-4 shadow-lg flex items-center space-x-24 w-full max-w-3xl"
+  class="bg-gray-100 outline-1 outline-gray-600 p-4 shadow-lg flex items-center space-x-24 w-full max-w-3xl"
 >
   <!-- Kép bal oldalon -->
   <img 
