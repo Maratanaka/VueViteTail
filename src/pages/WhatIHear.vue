@@ -10,21 +10,19 @@
       <div
         v-for="(sound, index) in sounds"
         :key="index"
-        class="bg-gray-100 outline-1 outline-gray-600 p-4 shadow-lg flex items-center space-x-48 w-full max-w-3xl"
+        class="bg-gray-100 outline-1 dark:bg-gray-900 outline-gray-600 p-4 shadow-lg flex items-center space-x-61 w-full max-w-3xl"
       >
         <img 
           :src="sound.img" 
           :alt="sound.title" 
           class="w-32 h-32 object-cover"
         />
-        <div class="flex flex-col justify-center text-left">
-            <h2 class="text-xl font-semibold mb-1">{{ sound.title }}</h2>
+          <div class="flex flex-col justify-center text-left">
+            <h2 class="text-black dark:text-white text-xl font-semibold mb-1">{{ sound.title }}</h2>
             <p class="text-gray-600 text-sm mt-1">{{ sound.author }}</p>
             <p class="text-gray-600 text-sm mt-1 font-semibold">{{ sound.album }}</p>
-        </div>
-        <div class="">
-            <p class="text-gray-600 text-sm mt-1">{{ sound.time }}</p>
-        </div>
+            <p class="text-gray-600 text-sm">{{ sound.time }}</p>          
+          </div>
       </div>
     </div>
   </div>
@@ -36,11 +34,11 @@ export default {
   data() {
     return {
       sounds: [
-        { title: "Feather", author: "Nujabes", album: "Modal Soul", img: "/images/nujabes.jpg", time: "2:00" },
-        { title: "Back In Black", author: "AC/DC", album: "Back In Black", img: "/images/acdc2.jpg", time: "1:00" },
-        { title: "Irregular God", author: "Kevin Penkin", album: "Tower Of God", img: "/images/KevinPenkin.jpg", time: "1:00" },
-        { title: "Design Matters", author: "Debbie Millman",  album: "", img: "/images/designmatters.jpg", time: "2:00" },
-        { title: "Coding Music Mix", author: "Spotify",  album: "", img: "/images/codingmusic.jpg", time: "2:00" },
+        { title: "Feather", author: "Nujabes", album: "Modal Soul", img: "/images/nujabes.jpg", time: "2:55" },
+        { title: "Back In Black", author: "AC/DC", album: "Back In Black", img: "/images/acdc2.jpg", time: "4:15" },
+        { title: "Irregular God", author: "Kevin Penkin", album: "Tower Of God", img: "/images/KevinPenkin.jpg", time: "4:27" },
+        { title: "Nocturne No.20", author: "Frederic Chopin",  album: "", img: "/images/nocturne.jpg", time: "4:26" },
+        { title: "Sweet Child O'Mine", author: "Guns N' Roses",  album: "Appetite For Destruction", img: "/images/GunsNRoses.jpg", time: "5:56" },
       ]
     };
   }

@@ -14,9 +14,11 @@
 
     <!-- Középső tartalom (átmenettel) -->
     <main class="min-h-screen flex flex-col justify-center items-center px-4 py-12 text-center">
-      <transition name="fade" mode="out-in">
-        <router-view />
-      </transition>
+      <router-view v-slot="{ Component }">
+        <transition name="fade" mode="out-in">
+          <component :is="Component" />
+        </transition>
+      </router-view>
     </main>
 
     <!-- Alsó bal sarok -->

@@ -7,7 +7,7 @@
     <div
   v-for="(book, index) in books"
   :key="index"
-  class="bg-gray-100 outline-1 outline-gray-600 p-4 shadow-lg flex items-center space-x-24 w-full max-w-3xl"
+  class="bg-gray-100 dark:bg-gray-900  outline-1 outline-gray-600 p-4 shadow-lg flex items-center space-x-24 w-full max-w-3xl"
 >
   <!-- Kép bal oldalon -->
   <img 
