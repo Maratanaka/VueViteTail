@@ -10,15 +10,17 @@
       <div
         v-for="(movie, index) in movies"
         :key="index"
-        class="bg-gray-100 outline-1 dark:bg-gray-900 outline-gray-600 p-4 shadow-lg items-center space-x-61 w-full max-w-3xl"
-        style="height: 24rem; width: 16rem;"
+        class="bg-gray-200 outline-1 dark:bg-gray-900 outline-gray-600 p-4 shadow-lg items-center space-x-61 w-full max-w-3xl"
+        style="height: 29rem; width: 18rem;"
         >
         
           <div class="justify-center flex flex-col">
             <img
             :src="movie.img" 
             :alt="movie.title" 
-            class=""/>         
+            class="h-100"/>
+              <p class="text-gray-600 text-sm mt-1">WATCHED: {{ movie.watched }}</p>
+              <p class="text-gray-600 text-sm mt-0.5">RATING: {{ movie.rating }}</p>
           </div>
       </div>
     </div>
@@ -32,10 +34,10 @@ export default {
     return {
       movies: [
         { watched: "October 2025", rating: "7.5", img: "/images/strange.jpg"},
-        { watched: "September 2025", rating: "8.8", img: "/images/earth2.jpg"},
-        { watched: "August 2025", rating: "8.7", img: "/images/KevinPenkin.jpg"},
-        { watched: "July 2025", rating: "8.6", img: "/images/nocturne.jpg"},
-        { watched: "June 2025", rating: "9.0", img: "/images/GunsNRoses.jpg"},
+        { watched: "October 2025", rating: "7.2", img: "/images/earth2.jpg"},
+        { watched: "September 2025", rating: "7.5", img: "/images/predator.jpg"},
+        { watched: "October 2025", rating: "7.5", img: "/images/deadpool_and_wolverine.jpg"},
+        { watched: "September 2025", rating: "7.1", img: "/images/thunderbolts.jpg"},
       ]
     };
   }
@@ -43,5 +45,15 @@ export default {
 </script>
 
 <style scoped>
+.blinking-cursor {
+  display: inline-block;
+  margin-left: 2px;
+  width: 10px;
+  animation: blink 2s steps(1) infinite;
+}
 
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
 </style>

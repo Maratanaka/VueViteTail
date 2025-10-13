@@ -7,7 +7,7 @@
 
     <!-- Felső jobb sarok -->
     <div class="absolute top-0 right-0 m-6 space-x-4">
-      <a href="#" class="dark:text-white no-underline hover:underline decoration-1 text-sm">About me</a>
+      <RouterLink to="about" class="dark:text-white no-underline hover:underline decoration-1 text-sm">About me</RouterLink>
       <br />
       <a href="#" class="dark:text-white no-underline hover:underline decoration-1 text-sm">Contact</a>
     </div>
@@ -20,13 +20,6 @@
         </transition>
       </router-view>
     </main>
-
-    <!-- Alsó bal sarok -->
-    <div>
-      <p class="fixed bottom-0 left-0 m-6 text-gray-400 text-sm">
-        Made with Vue, Vite and TailwindCSS
-      </p>
-    </div>
 
     <!-- Alsó jobb sarok -->
     <div class="fixed bottom-0 right-0 m-6 text-right space-y-1">

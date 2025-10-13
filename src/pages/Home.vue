@@ -12,6 +12,9 @@
     >
       Github
     </a>
+    <p class="fixed bottom-0 left-0 m-6 text-gray-400 text-sm">
+        Made with Vue, Vite and TailwindCSS
+      </p>
   </div>
 </template>
 

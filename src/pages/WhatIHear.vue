@@ -10,7 +10,7 @@
       <div
         v-for="(sound, index) in sounds"
         :key="index"
-        class="bg-gray-100 outline-1 dark:bg-gray-900 outline-gray-600 p-4 shadow-lg flex items-center space-x-61 w-full max-w-3xl"
+        class="bg-gray-200 outline-1 dark:bg-gray-900 outline-gray-600 p-4 shadow-lg flex items-center space-x-61 w-full max-w-3xl"
       >
         <img 
           :src="sound.img" 
