@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen flex flex-col items-center justify-center px-4 py-24 dark:text-white space-y-8">
+  <div class="flex flex-col items-center text-center space-y-12 dark:text-white justify-center py-20 px-4">
     <!-- Cím -->
     <h1 class="text-3xl md:text-6xl tracking-widest text-center">
       Get in touch.<span class="blinking-cursor">_</span>
