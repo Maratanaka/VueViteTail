@@ -1,10 +1,10 @@
 <template>
   <div
-    class="flex flex-col items-center text-center space-y-6 dark:text-white min-h-screen justify-center py-10 px-4"
+    class="flex flex-col items-center text-center space-y-6 dark:text-white min-h-screen justify-center py-20 px-4"
   >
     <!-- Cím -->
     <p
-      class="dark:text-white text-4xl sm:text-5xl md:text-6xl tracking-widest leading-tight"
+      class="dark:text-white text-3xl sm:text-5xl md:text-6xl tracking-widest leading-tight"
     >
       <RouterLink
         to="/"
@@ -21,7 +21,7 @@
         :key="index"
         :src="image"
         alt="visual inspiration"
-        class="shadow-lg hover:scale-105 transition-transform duration-300 object-cover mx-auto rounded-lg"
+        class=" hover:scale-105 transition-transform duration-300 object-cover mx-auto"
       />
     </div>
   </div>

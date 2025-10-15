@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen flex flex-col items-center text-center space-y-6 dark:text-white py-10 px-4">
+  <div class="min-h-screen flex flex-col items-center text-center space-y-6 dark:text-white py-20 px-4">
     <!-- Cím -->
     <p class="text-3xl md:text-6xl tracking-widest">
       <RouterLink to="/" class="no-underline hover:underline decoration-2">Martin</RouterLink>'s recently watched movies.<span class="blinking-cursor">_</span>
