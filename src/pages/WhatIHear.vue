@@ -6,23 +6,26 @@
     </p>
 
     <!-- Lista -->
-    <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-6 mt-8 w-full max-w-5xl">
+    <div class="flex flex-col space-y-6 mt-8 w-full max-w-xl">
       <div
         v-for="(sound, index) in sounds"
         :key="index"
-        class="bg-gray-200 outline-1 dark:bg-gray-900 outline-gray-600 p-4 shadow-lg flex items-center space-x-61 w-full max-w-3xl"
+        class="bg-gray-200 dark:bg-black outline-1 outline-gray-600 p-4 flex flex-col sm:flex-row items-center sm:items-start sm:space-x-4 w-full"
       >
-        <img 
-          :src="sound.img" 
-          :alt="sound.title" 
-          class="w-32 h-32 object-cover"
+        <!-- Kép -->
+        <img
+          :src="sound.img"
+          :alt="sound.title"
+          class="w-32 h-32 sm:w-36 sm:h-36 object-cover flex-shrink-0 mb-4 sm:mb-0 hover:scale-105 transition-transform duration-400"
         />
-          <div class="flex flex-col justify-center text-left">
-            <h2 class="text-black dark:text-white text-xl font-semibold mb-1">{{ sound.title }}</h2>
-            <p class="text-gray-600 text-sm mt-1">{{ sound.author }}</p>
-            <p class="text-gray-600 text-sm mt-1 font-semibold">{{ sound.album }}</p>
-            <p class="text-gray-600 text-sm">{{ sound.time }}</p>          
-          </div>
+
+        <!-- Szöveg -->
+        <div class="flex flex-col justify-center text-left max-w-full">
+          <h2 class="text-lg sm:text-xl font-semibold mb-1 text-black dark:text-white">{{ sound.title }}</h2>
+          <p class="text-gray-500 text-sm">{{ sound.author }}</p>
+          <p class="text-gray-500 text-sm mt-1 font-semibold">{{ sound.album }}</p>
+          <p class="text-gray-500 text-sm mt-1">{{ sound.time }}</p>
+        </div>
       </div>
     </div>
   </div>
@@ -37,8 +40,8 @@ export default {
         { title: "Feather", author: "Nujabes", album: "Modal Soul", img: "/images/nujabes.jpg", time: "2:55" },
         { title: "Back In Black", author: "AC/DC", album: "Back In Black", img: "/images/acdc2.jpg", time: "4:15" },
         { title: "Irregular God", author: "Kevin Penkin", album: "Tower Of God", img: "/images/KevinPenkin.jpg", time: "4:27" },
-        { title: "Nocturne No.20", author: "Frederic Chopin",  album: "", img: "/images/nocturne.jpg", time: "4:26" },
-        { title: "Sweet Child O'Mine", author: "Guns N' Roses",  album: "Appetite For Destruction", img: "/images/GunsNRoses.jpg", time: "5:56" },
+        { title: "Nocturne No.20", author: "Frederic Chopin", album: "", img: "/images/nocturne.jpg", time: "4:26" },
+        { title: "Sweet Child O'Mine", author: "Guns N' Roses", album: "Appetite For Destruction", img: "/images/GunsNRoses.jpg", time: "5:56" },
       ]
     };
   }
