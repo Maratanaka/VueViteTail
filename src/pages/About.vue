@@ -1,7 +1,7 @@
 <template>
     <main>
-        <div class="flex flex-col items-center text-center space-y-12 dark:text-white justify-center py-20">
-        <h1 class="dark:text-white text-6xl tracking-widest">
+        <div class="flex flex-col items-center text-center space-y-12 dark:text-white justify-center py-20 px-4">
+        <h1 class="text-3xl sm:text-5xl md:text-6xl tracking-widest">
       <RouterLink to="/" class="no-underline hover:underline decoration-2">Martin</RouterLink>'s work and
       <br> projects.<span class="blinking-cursor">_</span>
         </h1>
@@ -45,6 +45,8 @@
 
 div {
     border-bottom: 1px solid gray;
+    width: 80%;        /* a vonal szélessége */
+    margin: 0 auto;   /* középre igazítás */
 }
 
 @keyframes blink {
