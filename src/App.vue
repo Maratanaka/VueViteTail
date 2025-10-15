@@ -7,8 +7,8 @@
 
     <!-- Felső jobb sarok -->
     <div class="absolute top-0 right-0 m-6 space-x-4 text-right">
-      <RouterLink to="about" class="dark:text-white no-underline hover:underline decoration-1 text-sm">About me</RouterLink>
-      <a href="#" class="dark:text-white no-underline hover:underline decoration-1 text-sm">Contact</a>
+      <RouterLink to="about" class="dark:text-white no-underline hover:underline decoration-1 text-sm" active-class="underline decoration-1">About me</RouterLink>
+      <a href="#" class="dark:text-white no-underline hover:underline decoration-1 text-sm active-class="underline="decoration-1">Contact</a>
     </div>
 
     <!-- Középső tartalom -->
@@ -27,10 +27,34 @@
          md:rotate-0 rotate-90 origin-bottom-right
          dark:text-white text-black text-sm whitespace-nowrap"
 >
-  <RouterLink to="/what-i-see" class="no-underline hover:underline decoration-1">WHAT I SEE.</RouterLink>
-  <RouterLink to="/what-i-read" class="no-underline hover:underline decoration-1">WHAT I READ.</RouterLink>
-  <RouterLink to="/what-i-hear" class="no-underline hover:underline decoration-1">WHAT I HEAR.</RouterLink>
-  <RouterLink to="/what-i-watch" class="no-underline hover:underline decoration-1">WHAT I WATCH.</RouterLink>
+  <RouterLink 
+    to="/what-i-see" 
+    class="no-underline hover:underline decoration-1"
+    active-class="underline decoration-1"
+  >
+    WHAT I SEE.
+  </RouterLink>
+  <RouterLink 
+    to="/what-i-read" 
+    class="no-underline hover:underline decoration-1"
+    active-class="underline decoration-1"
+  >
+    WHAT I READ.
+  </RouterLink>
+  <RouterLink 
+    to="/what-i-hear" 
+    class="no-underline hover:underline decoration-1"
+    active-class="underline decoration-1"
+  >
+    WHAT I HEAR.
+  </RouterLink>
+  <RouterLink 
+    to="/what-i-watch" 
+    class="no-underline hover:underline decoration-1"
+    active-class="underline decoration-1"
+  >
+    WHAT I WATCH.
+  </RouterLink>
 </div>
 
   </div>
