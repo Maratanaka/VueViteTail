@@ -14,12 +14,13 @@
   >
     About me
   </RouterLink>
-  <a 
-    href="#" 
-    class="dark:text-white no-underline hover:underline decoration-1 underline-offset-2 text-sm"
+  <RouterLink 
+    to="contact" 
+    class="dark:text-white no-underline hover:underline decoration-1 underline-offset-2 text-sm" 
+    active-class="underline decoration-1 underline-offset-2"
   >
     Contact
-  </a>
+  </RouterLink>
 </div>
 
 

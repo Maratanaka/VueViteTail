@@ -5,6 +5,7 @@ import WhatIRead from '../pages/WhatIRead.vue'
 import WhatIHear from '../pages/WhatIHear.vue'
 import WhatIWatch from '../pages/WhatIWatch.vue'
 import About from '../pages/About.vue'
+import Contact from '../pages/Contact.vue'
 
 const routes = [
   { path: '/', component: Home },
@@ -13,6 +14,7 @@ const routes = [
   { path: '/what-i-hear', component: WhatIHear },
   { path: '/what-i-watch', component: WhatIWatch },
   { path: '/about', component: About },
+  { path: '/contact', component: Contact }
 ]
 
 const router = createRouter({
