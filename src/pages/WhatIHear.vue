@@ -8,25 +8,26 @@
     <!-- Lista -->
     <div class="flex flex-col space-y-6 mt-8 w-full max-w-xl">
       <div
-        v-for="(sound, index) in sounds"
-        :key="index"
-        class="bg-gray-200 dark:bg-black outline-1 outline-gray-600 p-4 flex flex-col sm:flex-row items-center sm:items-start sm:space-x-4 w-full"
-      >
-        <!-- Kép -->
-        <img
-          :src="sound.img"
-          :alt="sound.title"
-          class="w-32 h-32 sm:w-36 sm:h-36 object-cover flex-shrink-0 mb-4 sm:mb-0 hover:scale-105 transition-transform duration-400"
-        />
+  v-for="(sound, index) in sounds"
+  :key="index"
+  class="bg-gray-200 dark:bg-black outline-1 outline-gray-600 p-4 flex flex-row items-center space-x-4 w-full"
+>
+  <!-- Kép -->
+  <img
+    :src="sound.img"
+    :alt="sound.title"
+    class="w-32 h-32 sm:w-36 sm:h-36 object-cover flex-shrink-0 hover:scale-105 transition-transform duration-400"
+  />
 
-        <!-- Szöveg -->
-        <div class="flex flex-col justify-center text-left max-w-full">
-          <h2 class="text-lg sm:text-xl font-semibold mb-1 text-black dark:text-white">{{ sound.title }}</h2>
-          <p class="text-gray-500 text-sm">{{ sound.author }}</p>
-          <p class="text-gray-500 text-sm mt-1 font-semibold">{{ sound.album }}</p>
-          <p class="text-gray-500 text-sm mt-1">{{ sound.time }}</p>
-        </div>
-      </div>
+  <!-- Szöveg -->
+  <div class="flex flex-col justify-center text-left max-w-full">
+    <h2 class="text-lg sm:text-xl font-semibold mb-1 text-black dark:text-white">{{ sound.title }}</h2>
+    <p class="text-gray-500 text-sm">{{ sound.author }}</p>
+    <p class="text-gray-500 text-sm mt-1 font-semibold">{{ sound.album }}</p>
+    <p class="text-gray-500 text-sm mt-1">{{ sound.time }}</p>
+  </div>
+</div>
+
     </div>
   </div>
 </template>
