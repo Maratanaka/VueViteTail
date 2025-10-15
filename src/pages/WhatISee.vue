@@ -66,7 +66,7 @@ export default {
 /* Kép méretezés reszponzívan, keskenyebb képaránnyal */
 img {
   width: 80vw;
-  max-width: 17rem; /* korábban 20rem volt */
+  max-width: 19rem; /* korábban 20rem volt */
   height: auto;
 }
 
