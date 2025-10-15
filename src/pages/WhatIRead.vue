@@ -8,13 +8,13 @@
     <div
       v-for="(book, index) in books"
       :key="index"
-      class="bg-gray-200 dark:bg-black outline-1 outline-gray-600 p-4 shadow-lg flex flex-col sm:flex-row items-center sm:items-start sm:space-x-8 w-full max-w-3xl "
+      class="bg-gray-200 dark:bg-black outline-1 outline-gray-600 p-4 flex flex-col sm:flex-row items-center sm:items-start sm:space-x-6 w-full max-w-2xl "
     >
       <!-- Kép -->
       <img
         :src="book.img"
         :alt="book.title"
-        class="w-40 h-60 sm:w-48 sm:h-72 object-cover flex-shrink-0 mb-4 sm:mb-0 rounded-lg hover:scale-105 transition-transform duration-400"
+        class="w-40 h-60 sm:w-48 sm:h-72 object-cover flex-shrink-0 mb-4 sm:mb-0 hover:scale-105 transition-transform duration-400"
       />
 
       <!-- Szöveg -->
