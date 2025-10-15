@@ -15,7 +15,7 @@
     </p>
 
     <!-- Képgaléria -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 mt-8">
       <img
         v-for="(image, index) in images"
         :key="index"
@@ -66,7 +66,7 @@ export default {
 /* Kép méretezés reszponzívan, keskenyebb képaránnyal */
 img {
   width: 80vw;
-  max-width: 19rem; /* korábban 20rem volt */
+  max-width: 20rem; /* korábban 20rem volt */
   height: auto;
 }
 
@@ -79,7 +79,7 @@ img {
 
 @media (min-width: 1024px) {
   img {
-    width: 14rem;
+    width: 16rem;
     height: 24rem;
   }
 }
