@@ -21,12 +21,18 @@
     </main>
 
     <!-- Jobb alsó rotált menü -->
-    <div class="fixed bottom-0 right-0 mr-6 mb-10 rotate-90 origin-bottom-right dark:text-white text-black text-sm space-x-3 whitespace-nowrap">
-      <RouterLink to="/what-i-see" class="no-underline hover:underline decoration-1">WHAT I SEE.</RouterLink>
-      <RouterLink to="/what-i-read" class="no-underline hover:underline decoration-1">WHAT I READ.</RouterLink>
-      <RouterLink to="/what-i-hear" class="no-underline hover:underline decoration-1">WHAT I HEAR.</RouterLink>
-      <RouterLink to="/what-i-watch" class="no-underline hover:underline decoration-1">WHAT I WATCH.</RouterLink>
-    </div>
+    <div
+  class="fixed bottom-0 right-0 mr-6 mb-10 
+         flex flex-row space-x-3 md:flex-col md:space-x-0 md:space-y-1 
+         md:rotate-0 rotate-90 origin-bottom-right
+         dark:text-white text-black text-sm whitespace-nowrap"
+>
+  <RouterLink to="/what-i-see" class="no-underline hover:underline decoration-1">WHAT I SEE.</RouterLink>
+  <RouterLink to="/what-i-read" class="no-underline hover:underline decoration-1">WHAT I READ.</RouterLink>
+  <RouterLink to="/what-i-hear" class="no-underline hover:underline decoration-1">WHAT I HEAR.</RouterLink>
+  <RouterLink to="/what-i-watch" class="no-underline hover:underline decoration-1">WHAT I WATCH.</RouterLink>
+</div>
+
   </div>
 </template>
 
