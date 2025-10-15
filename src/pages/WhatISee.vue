@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col items-center text-center space-y-6 dark:text-white min-h-screen justify-center py-20 px-4"
+    class="flex flex-col items-center text-center space-y-6 dark:text-white min-h-screen justify-center py-10 px-4"
   >
     <!-- Cím -->
     <p
