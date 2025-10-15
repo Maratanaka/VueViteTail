@@ -12,7 +12,7 @@
     >
       Github
     </a>
-    <p class="fixed bottom-0 left-0 m-3 sm:m-6 text-gray-400 text-sm text-left  max-w-[40vw] leading-snug">
+    <p class="fixed bottom-0 left-0 m-3 sm:m-6 text-gray-400 text-s text-left  max-w-[40vw] leading-snug">
         Made with Vue, Vite and TailwindCSS
       </p>
   </div>
