@@ -6,24 +6,22 @@
       <br> projects.<span class="blinking-cursor">_</span>
         </h1>
         <p class="max-w-2xl mx-auto px-3 text-left dark:text-gray-400 text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, molestiae, voluptates veniam laudantium quas vero cupiditate facilis at porro cum doloribus sit minus natus 
-        </p>
+            Hi, I'm Martin — an engineering leader passionate about building fast, scalable web experiences.        </p>
         <p class="max-w-2xl mx-auto px-3 text-left dark:text-gray-400 text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, molestiae, voluptates veniam laudantium quas vero cupiditate facilis at porro cum doloribus sit minus natus 
-        </p>
+            I’m French with Vietnamese heritage, grew up in Paris, lived in London and Munich, and now call San Francisco home.        </p>
     </div>
     <div class="flex flex-col space-y-12 dark:text-white justify-center py-20">
         <h2 class="text-left text-3xl">Portfolio Website</h2>
         <ul class="list-disc max-w-2xl mx-auto px-3 text-left dark:text-gray-400 text-lg">
-            <li>Now this is a story all about how, my life got flipped-turned upside down. Now this is a story all about how, my life got flipped-turned upside down</li>
-            <li>And I'd like to take a minute just sit right there</li>
-            <li>I'll tell you how I became the prince of a town called Bel-Air</li>
+            <li>Joined as a Software Engineer on the Next.js team.</li>
+            <li>Helped launch the App Router and improved core framework performance.</li>
+            <li>Became an Engineering Manager in 2023.</li>
+            <li>Now leading a team of talented engineers to build the future of Next.js.</li>
         </ul>
         <h2 class="text-left text-3xl">Music App</h2>
         <ul class="list-disc max-w-2xl mx-auto px-3 text-left dark:text-gray-400 text-lg">
-            <li>Now this is a story all about how, my life got flipped-turned upside down. Now this is a story all about how, my life got flipped-turned upside down</li>
-            <li>And I'd like to take a minute just sit right there</li>
-            <li>I'll tell you how I became the prince of a town called Bel-Air</li>
+            <li>Started as a UI Engineer on Workplace, focusing on performance and infra.</li>
+            <li>Moved to the React Native team in 2021, working on core framework improvements.</li>
         </ul>
     </div>
     </main>
