@@ -21,7 +21,7 @@
     </main>
 
     <!-- Jobb alsó rotált menü -->
-    <div class="fixed bottom-0 right-0  mb-120 rotate-270 origin-bottom-right text-gray-400 text-sm space-x-6 whitespace-nowrap">
+    <div class="fixed bottom-0 right-0 mr-6 mb-10 rotate-90 origin-bottom-right text-gray-400 text-sm space-x-3 whitespace-nowrap">
       <RouterLink to="/what-i-see" class="no-underline hover:underline decoration-1">WHAT I SEE.</RouterLink>
       <RouterLink to="/what-i-read" class="no-underline hover:underline decoration-1">WHAT I READ.</RouterLink>
       <RouterLink to="/what-i-hear" class="no-underline hover:underline decoration-1">WHAT I HEAR.</RouterLink>
