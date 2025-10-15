@@ -1,9 +1,9 @@
 <template>
   <div class="flex flex-col items-center text-center space-y-12 dark:text-white justify-center py-20 px-4">
     <!-- Cím -->
-    <h1 class="text-3xl md:text-6xl tracking-widest text-center">
-      Get in touch.<span class="blinking-cursor">_</span>
-    </h1>
+    <h1 class="text-3xl sm:text-5xl md:text-6xl tracking-widest">
+      <RouterLink to="/" class="no-underline hover:underline decoration-2">Martin</RouterLink>'s contact<br> information.<span class="blinking-cursor">_</span>
+        </h1>
 
     <!-- Leírás -->
     <p class="max-w-xl text-center text-gray-400">
