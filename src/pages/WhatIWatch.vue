@@ -1,8 +1,8 @@
 <template>
-  <div class="min-h-screen flex flex-col items-center text-center space-y-6 dark:text-white py-24 px-4">
+  <div class="min-h-screen flex flex-col items-center text-center space-y-6 dark:text-white py-10 px-4">
     <!-- Cím -->
-    <p class="text-6xl tracking-widest">
-      <RouterLink to="/" class="no-underline hover:underline decoration-2">Martin</RouterLink>'s recently<br>watched movies.<span class="blinking-cursor">_</span>
+    <p class="text-3xl md:text-6xl tracking-widest">
+      <RouterLink to="/" class="no-underline hover:underline decoration-2">Martin</RouterLink>'s recently watched movies.<span class="blinking-cursor">_</span>
     </p>
 
     <!-- Lista -->
@@ -10,7 +10,7 @@
       <div
         v-for="(movie, index) in movies"
         :key="index"
-        class="bg-gray-200 outline-1 dark:bg-gray-900 outline-gray-600 p-4 shadow-lg items-center space-x-61 w-full max-w-3xl"
+        class="bg-gray-200 outline-1 dark:bg-black outline-gray-600 p-4  items-center space-x-61 w-full max-w-3xl"
         style="height: 29rem; width: 18rem;"
         >
         
