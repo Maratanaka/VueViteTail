@@ -1,28 +1,18 @@
 <template>
-  <div class="relative min-h-screen overflow-x-hidden">
+  <div>
     <!-- Felső bal sarok -->
-    <div class="absolute top-0 left-0 m-4 sm:m-6">
-      <p class="dark:text-white text-s sm:text-sm">2025</p>
+    <div class="absolute top-0 left-0 m-6">
+      <p class="dark:text-white text-sm">2025</p>
     </div>
 
     <!-- Felső jobb sarok -->
-    <div class="absolute top-0 right-0 m-4 sm:m-6 space-y-1 sm:space-y-0 sm:space-x-4 text-right">
-      <RouterLink
-        to="/about"
-        class="dark:text-white no-underline hover:underline decoration-1 text-s sm:text-sm block sm:inline"
-      >
-        About me
-      </RouterLink>
-      <a
-        href="#"
-        class="dark:text-white no-underline hover:underline decoration-1 text-s sm:text-sm block sm:inline"
-      >
-        Contact
-      </a>
+    <div class="absolute top-0 right-0 m-6 space-x-4 text-right">
+      <RouterLink to="about" class="dark:text-white no-underline hover:underline decoration-1 text-sm">About me</RouterLink>
+      <a href="#" class="dark:text-white no-underline hover:underline decoration-1 text-sm">Contact</a>
     </div>
 
     <!-- Középső tartalom -->
-    <main class="min-h-screen flex flex-col justify-center items-center px-4 py-20 text-center">
+    <main class="min-h-screen flex flex-col justify-center items-center px-4 py-12 text-center">
       <router-view v-slot="{ Component }">
         <transition name="fade" mode="out-in">
           <component :is="Component" />
@@ -30,34 +20,12 @@
       </router-view>
     </main>
 
-    <!-- Alsó jobb sarok -->
-    <div
-      class="fixed bottom-0 right-0 m-4 sm:m-6 text-right space-y-1 text-s sm:text-sm"
-    >
-      <RouterLink
-        to="/what-i-see"
-        class="text-gray-400 no-underline hover:underline decoration-1 block"
-      >
-        WHAT I SEE.
-      </RouterLink>
-      <RouterLink
-        to="/what-i-read"
-        class="text-gray-400 no-underline hover:underline decoration-1 block"
-      >
-        WHAT I READ.
-      </RouterLink>
-      <RouterLink
-        to="/what-i-hear"
-        class="text-gray-400 no-underline hover:underline decoration-1 block"
-      >
-        WHAT I HEAR.
-      </RouterLink>
-      <RouterLink
-        to="/what-i-watch"
-        class="text-gray-400 no-underline hover:underline decoration-1 block"
-      >
-        WHAT I WATCH.
-      </RouterLink>
+    <!-- Jobb alsó rotált menü -->
+    <div class="fixed bottom-0 right-0  mb-120 rotate-270 origin-bottom-right text-gray-400 text-sm space-x-6 whitespace-nowrap">
+      <RouterLink to="/what-i-see" class="no-underline hover:underline decoration-1">WHAT I SEE.</RouterLink>
+      <RouterLink to="/what-i-read" class="no-underline hover:underline decoration-1">WHAT I READ.</RouterLink>
+      <RouterLink to="/what-i-hear" class="no-underline hover:underline decoration-1">WHAT I HEAR.</RouterLink>
+      <RouterLink to="/what-i-watch" class="no-underline hover:underline decoration-1">WHAT I WATCH.</RouterLink>
     </div>
   </div>
 </template>
