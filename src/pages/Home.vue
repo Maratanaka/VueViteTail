@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center text-center space-y-6 dark:text-white min-h-screen py-40 px-4">
+  <div class="flex flex-col items-center text-center space-y-6 dark:text-white  py-40 px-4">
     <p class="dark:text-white text-4xl md:text-6xl">
       <RouterLink to="/" class="no-underline  hover:underline decoration-2 underline-offset-2">Martin</RouterLink> 
       Tokes<span class="blinking-cursor">_</span>
