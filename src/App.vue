@@ -6,10 +6,22 @@
     </div>
 
     <!-- Felső jobb sarok -->
-    <div class="absolute top-0 right-0 m-6 space-x-4 text-right">
-      <RouterLink to="about" class="dark:text-white no-underline hover:underline decoration-1 underline-offset-2 text-sm" active-class="underline decoration-1 underline-offset-2">About me</RouterLink>
-      <a href="#" class="dark:text-white no-underline hover:underline decoration-1 text-sm active-class="underline="decoration-1">Contact</a>
-    </div>
+    <div class="absolute top-0 right-0 m-6 flex flex-col space-y-2 text-right">
+  <RouterLink 
+    to="about" 
+    class="dark:text-white no-underline hover:underline decoration-1 underline-offset-2 text-sm" 
+    active-class="underline decoration-1 underline-offset-2"
+  >
+    About me
+  </RouterLink>
+  <a 
+    href="#" 
+    class="dark:text-white no-underline hover:underline decoration-1 underline-offset-2 text-sm"
+  >
+    Contact
+  </a>
+</div>
+
 
     <!-- Középső tartalom -->
     <main class="min-h-screen flex flex-col justify-center items-center px-4 py-12 text-center">
