@@ -3,7 +3,7 @@
     <!-- Cím -->
     <h1 class="text-3xl sm:text-5xl md:text-6xl tracking-widest">
       <RouterLink to="/" class="no-underline hover:underline decoration-2">Martin</RouterLink>'s contact<br> information.<span class="blinking-cursor">_</span>
-        </h1>
+    </h1>
 
     <!-- Leírás -->
     <p class="max-w-xl text-center text-gray-400">
@@ -11,15 +11,19 @@
     </p>
 
     <!-- Kontakt űrlap -->
-    <form class="w-full max-w-md flex flex-col space-y-4">
+    <form ref="contactForm" @submit.prevent="sendEmail" class="w-full max-w-md flex flex-col space-y-4">
       <input 
         type="email" 
+        name="user_email"
         placeholder="Your Email" 
+        required
         class="p-3 rounded-md border border-gray-400 dark:border-gray-700 bg-white dark:bg-black text-black dark:text-white focus:outline-none focus:ring-1 focus:ring-white"
       />
       <textarea 
+        name="message"
         rows="5" 
         placeholder="Your Message" 
+        required
         class="p-3 rounded-md border border-gray-400 dark:border-gray-700 bg-white dark:bg-black text-black dark:text-white focus:outline-none focus:ring-1 focus:ring-white"
       ></textarea>
       <button 
@@ -33,8 +37,27 @@
 </template>
 
 <script>
+import emailjs from 'emailjs-com';
+
 export default {
   name: "Contact",
+  methods: {
+    sendEmail() {
+      const serviceID = 'service_3mkizzh';   // a saját EmailJS service ID-d
+      const templateID = 'template_3ueb0el'; // a saját template ID-d
+      const publicKey = 'X3G55jdN-IIdFPuuI';      // a saját Public Key-d
+
+      emailjs.sendForm(serviceID, templateID, this.$refs.contactForm, publicKey)
+        .then((result) => {
+          console.log(result.text);
+          alert("Message sent successfully!");
+          this.$refs.contactForm.reset();
+        }, (error) => {
+          console.log(error.text);
+          alert("Failed to send message. Check your EmailJS configuration.");
+        });
+    }
+  }
 };
 </script>
 

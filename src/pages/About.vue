@@ -6,17 +6,16 @@
       <br> projects.<span class="blinking-cursor">_</span>
         </h1>
         <p class="max-w-2xl mx-auto px-3 text-left dark:text-gray-400 text-lg">
-            Hi, I'm Martin — an engineering leader passionate about building fast, scalable web experiences.        </p>
+            Hi, I'm Martin — currently studying software development and testing, and I am primarily looking to gain practical work experience in UX/UI design and Frontend development.</p>
         <p class="max-w-2xl mx-auto px-3 text-left dark:text-gray-400 text-lg">
-            I’m French with Vietnamese heritage, grew up in Paris, lived in London and Munich, and now call San Francisco home.        </p>
+            I have confident skills in HTML, CSS, and JavaScript, as well as experience working with ReactJS and Vue3 projects. I enjoy working in a team, learn quickly, and always strive to find the best solutions to improve the user experience.</p>
     </div>
     <div class="flex flex-col space-y-12 dark:text-white justify-center py-20">
         <h2 class="text-left text-3xl">Portfolio Website</h2>
         <ul class="list-disc max-w-2xl mx-auto px-3 text-left dark:text-gray-400 text-lg">
-            <li>Joined as a Software Engineer on the Next.js team.</li>
-            <li>Helped launch the App Router and improved core framework performance.</li>
-            <li>Became an Engineering Manager in 2023.</li>
-            <li>Now leading a team of talented engineers to build the future of Next.js.</li>
+            <li>Built with Vue 3, Vite, and TailwindCSS</li>
+            <li>Showcasing my sources of inspiration through a curated collection of images, music, movies, and books.</li>
+            <li>The site is responsive, cleanly designed, and deployed to Vercel as a Single Page Application (SPA).</li>
         </ul>
         <h2 class="text-left text-3xl">Music App</h2>
         <ul class="list-disc max-w-2xl mx-auto px-3 text-left dark:text-gray-400 text-lg">
