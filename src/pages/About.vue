@@ -19,8 +19,9 @@
         </ul>
         <h2 class="text-left text-3xl">Music App</h2>
         <ul class="list-disc max-w-2xl mx-auto px-3 text-left dark:text-gray-400 text-lg">
-            <li>Started as a UI Engineer on Workplace, focusing on performance and infra.</li>
-            <li>Moved to the React Native team in 2021, working on core framework improvements.</li>
+            <li>A music application built with Vue 3, Vite, TailwindCSS, Ionic, and Capacitor.</li>
+            <li>Curated music library with in-browser playback, smooth navigation, and a clean, mobile-friendly interface.</li>
+            <li>Deployed on Vercel as a cross-platform Single Page Application (SPA).</li>
         </ul>
     </div>
     </main>
